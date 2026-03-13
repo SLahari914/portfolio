@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Lahari S - BCA Student &amp; Aspiring Software Developer. Portfolio showcasing skills in C, Java, Python, HTML, CSS, JavaScript, MySQL." />
+    <title>Lahari S | Portfolio</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body>
+
+    <!-- ===== CURSOR ===== -->
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-follower" id="cursorFollower"></div>
+
+    <!-- ===== LOADER ===== -->
+    <div class="loader" id="loader">
+        <div class="loader-content">
+            <div class="loader-text">L<span>S</span></div>
+            <div class="loader-bar">
+                <div class="loader-fill"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">Lahari<span>S</span></a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active" data-section="home">Home</a></li>
+                <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+                <li><a href="#education" class="nav-link" data-section="education">Education</a></li>
+                <li><a href="#skills" class="nav-link" data-section="skills">Skills</a></li>
+                <li><a href="#projects" class="nav-link" data-section="projects">Projects</a></li>
+                <li><a href="#resume" class="nav-link" data-section="resume">Resume</a></li>
+                <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ===== HOME ===== -->
+    <section class="section home-section" id="home">
+        <div class="particles" id="particles"></div>
+        <div class="home-content">
+            <div class="home-badge">
+                <span class="badge-dot"></span>
+                Available for opportunities
+            </div>
+            <h1 class="home-name">
+                <span class="line-1">Hello, I'm</span>
+                <span class="line-2 gradient-text">Lahari S</span>
+            </h1>
+            <p class="home-tagline">BCA Student <span class="separator">|</span> Aspiring Software Developer</p>
+            <p class="home-intro">
+                Hello! I'm a passionate <strong>Bachelor of Computer Applications</strong> student who loves building
+                software solutions and exploring new technologies. From web development to databases, I'm always eager
+                to learn and create.
+            </p>
+            <div class="home-cta">
+                <a href="#contact" class="btn btn-primary">
+                    <i class="fas fa-paper-plane"></i> Get In Touch
+                </a>
+                <a href="#projects" class="btn btn-outline">
+                    <i class="fas fa-code"></i> View Projects
+                </a>
+            </div>
+            <div class="home-socials">
+                <a href="https://www.linkedin.com/in/lahari-s-85a900398" target="_blank" rel="noopener"
+                    class="social-link" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://instagram.com/divine_soul__25" target="_blank" rel="noopener" class="social-link"
+                    aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="mailto:laharis933@gmail.com" class="social-link" aria-label="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+        <div class="home-visual">
+            <div class="avatar-wrapper">
+                <div class="avatar-ring ring-1"></div>
+                <div class="avatar-ring ring-2"></div>
+                <div class="avatar-ring ring-3"></div>
+                <div class="avatar-blob">
+                    <div class="avatar-initials">LS</div>
+                </div>
+                <div class="floating-card card-1">
+                    <i class="fab fa-python"></i>
+                    <span>Python</span>
+                </div>
+                <div class="floating-card card-2">
+                    <i class="fab fa-java"></i>
+                    <span>Java</span>
+                </div>
+                <div class="floating-card card-3">
+                    <i class="fab fa-html5"></i>
+                    <span>HTML5</span>
+                </div>
+                <div class="floating-card card-4">
+                    <i class="fas fa-database"></i>
+                    <span>MySQL</span>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-mouse">
+                <div class="scroll-wheel"></div>
+            </div>
+            <span>Scroll Down</span>
+        </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section class="section about-section" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Get To Know Me</span>
+                <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-grid">
+                <div class="about-visual reveal">
+                    <div class="about-card-wrapper">
+                        <div class="about-avatar-large">
+                            <div class="about-initials-lg">LS</div>
+                        </div>
+                        <div class="about-stats">
+                            <div class="stat-item">
+                                <span class="stat-num" data-target="3">0</span><span class="stat-plus">+</span>
+                                <span class="stat-label">Programming Languages</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-num" data-target="3">0</span><span class="stat-plus">+</span>
+                                <span class="stat-label">Projects Built</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-num" data-target="5">0</span><span class="stat-plus">+</span>
+                                <span class="stat-label">Technologies Learned</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-text reveal">
+                    <p>
+                        I'm currently pursuing a <strong>Bachelor of Computer Applications</strong> with a strong
+                        passion for programming and software development. I enjoy solving problems using programming
+                        languages and building practical projects that sharpen my technical skills.
+                    </p>
+                    <p>
+                        I am particularly interested in learning modern technologies and improving my knowledge in
+                        <strong>software development</strong>, <strong>database management</strong>, and <strong>web
+                            application development</strong>.
+                    </p>
+                    <p>
+                        My goal is to become a skilled software developer and contribute to innovative technology
+                        solutions that make a positive impact.
+                    </p>
+                    <div class="about-tags">
+                        <span class="tag"><i class="fas fa-code"></i> Problem Solver</span>
+                        <span class="tag"><i class="fas fa-lightbulb"></i> Quick Learner</span>
+                        <span class="tag"><i class="fas fa-users"></i> Team Player</span>
+                        <span class="tag"><i class="fas fa-rocket"></i> Tech Enthusiast</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== EDUCATION ===== -->
+    <section class="section education-section" id="education">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Academic Journey</span>
+                <h2 class="section-title">My <span class="gradient-text">Education</span></h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="timeline">
+
+                <div class="timeline-item reveal">
+                    <div class="timeline-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="timeline-card">
+                        <div class="timeline-year">Current</div>
+                        <h3 class="timeline-degree">Bachelor of Computer Applications (BCA)</h3>
+                        <p class="timeline-institution"><i class="fas fa-university"></i> Akash Global College</p>
+                        <p class="timeline-desc">Pursuing a comprehensive BCA degree with focus on programming, software
+                            development, database management, and web technologies.</p>
+                        <div class="timeline-tags">
+                            <span>Programming</span>
+                            <span>Databases</span>
+                            <span>Web Dev</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item reveal">
+                    <div class="timeline-icon">
+                        <i class="fas fa-book-open"></i>
+                    </div>
+                    <div class="timeline-card">
+                        <div class="timeline-year">Pre-University</div>
+                        <h3 class="timeline-degree">Pre-University (PU) Course</h3>
+                        <p class="timeline-institution"><i class="fas fa-university"></i> Lakshya PU College</p>
+                        <p class="timeline-desc">Completed pre-university education building a strong academic
+                            foundation in science and mathematics.</p>
+                        <div class="timeline-tags">
+                            <span>Science</span>
+                            <span>Mathematics</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item reveal">
+                    <div class="timeline-icon">
+                        <i class="fas fa-school"></i>
+                    </div>
+                    <div class="timeline-card">
+                        <div class="timeline-year">10th Standard</div>
+                        <h3 class="timeline-degree">Secondary School Education (SSLC)</h3>
+                        <p class="timeline-institution"><i class="fas fa-university"></i> Vargu Jain Public School,
+                            Chintamani</p>
+                        <p class="timeline-desc">Completed 10th standard with a strong academic record, developing core
+                            fundamentals in science, mathematics, and languages.</p>
+                        <div class="timeline-tags">
+                            <span>SSLC</span>
+                            <span>Chintamani</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SKILLS ===== -->
+    <section class="section skills-section" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">What I Know</span>
+                <h2 class="section-title">My <span class="gradient-text">Skills</span></h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="skills-grid">
+
+                <div class="skills-category reveal">
+                    <div class="category-icon"><i class="fas fa-code"></i></div>
+                    <h3>Programming Languages</h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name"><i class="fas fa-copyright"></i> C</span>
+                                <span class="skill-pct">80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-width="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name"><i class="fab fa-java"></i> Java</span>
+                                <span class="skill-pct">75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-width="75"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name"><i class="fab fa-python"></i> Python</span>
+                                <span class="skill-pct">78%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-width="78"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-category reveal">
+                    <div class="category-icon"><i class="fas fa-globe"></i></div>
+                    <h3>Web Technologies</h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name"><i class="fab fa-html5"></i> HTML</span>
+                                <span class="skill-pct">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-width="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name"><i class="fab fa-css3-alt"></i> CSS</span>
+                                <span class="skill-pct">80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-width="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name"><i class="fab fa-js-square"></i> JavaScript</span>
+                                <span class="skill-pct">70%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-width="70"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-category reveal">
+                    <div class="category-icon"><i class="fas fa-database"></i></div>
+                    <h3>Databases</h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name"><i class="fas fa-database"></i> MySQL</span>
+                                <span class="skill-pct">75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-width="75"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name"><i class="fas fa-server"></i> SQLite3</span>
+                                <span class="skill-pct">70%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-width="70"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Tech badge cloud -->
+            <div class="tech-badges reveal">
+                <span class="tech-badge"><i class="fas fa-copyright"></i> C</span>
+                <span class="tech-badge"><i class="fab fa-java"></i> Java</span>
+                <span class="tech-badge"><i class="fab fa-python"></i> Python</span>
+                <span class="tech-badge"><i class="fab fa-html5"></i> HTML</span>
+                <span class="tech-badge"><i class="fab fa-css3-alt"></i> CSS</span>
+                <span class="tech-badge"><i class="fab fa-js-square"></i> JavaScript</span>
+                <span class="tech-badge"><i class="fas fa-database"></i> MySQL</span>
+                <span class="tech-badge"><i class="fas fa-server"></i> SQLite3</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PROJECTS ===== -->
+    <section class="section projects-section" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">What I've Built</span>
+                <h2 class="section-title">My <span class="gradient-text">Projects</span></h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="projects-grid">
+
+                <div class="project-card reveal">
+                    <div class="project-top">
+                        <div class="project-icon"><i class="fas fa-users"></i></div>
+                        <div class="project-links">
+                            <a href="#" class="project-link" title="View Project"><i
+                                    class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="project-link" title="Github"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Student Management System</h3>
+                    <p class="project-desc">A simple system to manage student records using Java and MySQL. Features
+                        include adding, updating, deleting, and searching student data with a clean interface.</p>
+                    <div class="project-tech">
+                        <span><i class="fab fa-java"></i> Java</span>
+                        <span><i class="fas fa-database"></i> MySQL</span>
+                    </div>
+                </div>
+
+                <div class="project-card reveal featured">
+                    <div class="project-badge">Featured</div>
+                    <div class="project-top">
+                        <div class="project-icon"><i class="fas fa-user-circle"></i></div>
+                        <div class="project-links">
+                            <a href="#" class="project-link" title="View Project"><i
+                                    class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="project-link" title="Github"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Personal Portfolio Website</h3>
+                    <p class="project-desc">A responsive portfolio website built using HTML, CSS, JavaScript, and Flask.
+                        Features smooth animations, dynamic sections, and a modern dark design.</p>
+                    <div class="project-tech">
+                        <span><i class="fab fa-html5"></i> HTML</span>
+                        <span><i class="fab fa-css3-alt"></i> CSS</span>
+                        <span><i class="fab fa-js-square"></i> JS</span>
+                    </div>
+                </div>
+
+                <div class="project-card reveal">
+                    <div class="project-top">
+                        <div class="project-icon"><i class="fas fa-calculator"></i></div>
+                        <div class="project-links">
+                            <a href="#" class="project-link" title="View Project"><i
+                                    class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="project-link" title="Github"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Basic Calculator Application</h3>
+                    <p class="project-desc">A calculator program developed using Python. Supports all basic arithmetic
+                        operations with a user-friendly interface built from the ground up.</p>
+                    <div class="project-tech">
+                        <span><i class="fab fa-python"></i> Python</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== RESUME ===== -->
+    <section class="section resume-section" id="resume">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">My Document</span>
+                <h2 class="section-title">My <span class="gradient-text">Resume</span></h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="resume-content reveal">
+                <div class="resume-icon-wrapper">
+                    <div class="resume-icon-bg">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                </div>
+                <p class="resume-desc">
+                    You can view or download my resume to learn more about my academic background, skills, and projects.
+                </p>
+                <div class="resume-buttons">
+                    <a href="{{ url_for('static', filename='resume.pdf') }}" target="_blank" rel="noopener"
+                        class="btn btn-primary" id="viewResumeBtn">
+                        <i class="fas fa-eye"></i> View Resume
+                    </a>
+                    <a href="{{ url_for('static', filename='resume.pdf') }}" download="Lahari_S_Resume.pdf"
+                        class="btn btn-outline" id="downloadResumeBtn">
+                        <i class="fas fa-download"></i> Download Resume
+                    </a>
+                </div>
+                <p class="resume-note"><i class="fas fa-info-circle"></i> Place your <strong>resume.pdf</strong> file
+                    inside the <strong>static/</strong> folder</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section class="section contact-section" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Say Hello</span>
+                <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info reveal">
+                    <p class="contact-intro">I'm always open to new opportunities and collaborations. Feel free to reach
+                        out through any of the channels below!</p>
+                    <div class="contact-cards">
+                        <a href="mailto:laharis933@gmail.com" class="contact-card">
+                            <div class="contact-card-icon"><i class="fas fa-envelope"></i></div>
+                            <div class="contact-card-text">
+                                <span class="contact-card-label">Email</span>
+                                <span class="contact-card-value">laharis933@gmail.com</span>
+                            </div>
+                            <i class="fas fa-arrow-right contact-arrow"></i>
+                        </a>
+                        <a href="tel:7338479136" class="contact-card">
+                            <div class="contact-card-icon"><i class="fas fa-phone"></i></div>
+                            <div class="contact-card-text">
+                                <span class="contact-card-label">Phone</span>
+                                <span class="contact-card-value">+91 733 847 9136</span>
+                            </div>
+                            <i class="fas fa-arrow-right contact-arrow"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/lahari-s-85a900398" target="_blank" rel="noopener"
+                            class="contact-card">
+                            <div class="contact-card-icon"><i class="fab fa-linkedin-in"></i></div>
+                            <div class="contact-card-text">
+                                <span class="contact-card-label">LinkedIn</span>
+                                <span class="contact-card-value">lahari-s-85a900398</span>
+                            </div>
+                            <i class="fas fa-arrow-right contact-arrow"></i>
+                        </a>
+                        <a href="https://instagram.com/divine_soul__25" target="_blank" rel="noopener"
+                            class="contact-card">
+                            <div class="contact-card-icon"><i class="fab fa-instagram"></i></div>
+                            <div class="contact-card-text">
+                                <span class="contact-card-label">Instagram</span>
+                                <span class="contact-card-value">@divine_soul__25</span>
+                            </div>
+                            <i class="fas fa-arrow-right contact-arrow"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- ===== CONTACT FORM ===== -->
+                <div class="contact-form-wrapper reveal">
+                    <form class="contact-form" id="contactForm" novalidate>
+                        <h3 class="form-title">Send a Message</h3>
+
+                        <div class="form-group">
+                            <label for="userName">Your Name</label>
+                            <input type="text" id="userName" name="name" placeholder="John Doe" required
+                                autocomplete="name" />
+                        </div>
+                        <div class="form-group">
+                            <label for="userEmail">Your Email</label>
+                            <input type="email" id="userEmail" name="email" placeholder="john@example.com" required
+                                autocomplete="email" />
+                        </div>
+                        <div class="form-group">
+                            <label for="userSubject">Subject</label>
+                            <input type="text" id="userSubject" name="subject" placeholder="What is this regarding?" />
+                        </div>
+                        <div class="form-group">
+                            <label for="userMessage">Message</label>
+                            <textarea id="userMessage" name="message" rows="5" placeholder="Your message here..."
+                                required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+
+                        <!-- Success / Error feedback -->
+                        <div class="form-success" id="formSuccess">
+                            <i class="fas fa-check-circle"></i> Message sent! I'll get back to you soon.
+                        </div>
+                        <div class="form-error" id="formError">
+                            <i class="fas fa-exclamation-circle"></i> <span id="formErrorText">Something went wrong.
+                                Please try again.</span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">Lahari<span>S</span></div>
+                <p class="footer-tagline">BCA Student | Aspiring Software Developer</p>
+                <div class="footer-socials">
+                    <a href="https://www.linkedin.com/in/lahari-s-85a900398" target="_blank" rel="noopener"
+                        aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://instagram.com/divine_soul__25" target="_blank" rel="noopener"
+                        aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="mailto:laharis933@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                </div>
+                <p class="footer-copy">&copy; 2025 Lahari S. Crafted with <i class="fas fa-heart"></i> and Code.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to top -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+
+</html>
