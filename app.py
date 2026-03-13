@@ -83,7 +83,13 @@ Sent via Portfolio Contact Form (Flask-Mail)
 
 
 # ── Run ───────────────────────────────────────────────────────────────────
+<<<<<<< HEAD
 if __name__ == '__main__':
     # Use the PORT environment variable if available (Render, etc.)
     port = int(os.environ.get('PORT', 5000))
     app.run(host='0.0.0.0', port=port, debug=True)
+=======
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=10000)
+    
+>>>>>>> ca2bb066e72162bfc50e6cad91adec99234d876d
